@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="height" constant="40" id="llv-tt-cWd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Login with SDK ">
+                                <state key="normal" title="Login with SDK UI">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -65,11 +65,11 @@
                                     <constraint firstAttribute="height" constant="40" id="uNd-Tw-Kbe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Login with Web ">
+                                <state key="normal" title="Login with SDK">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="browserLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsk-Ei-2gB"/>
+                                    <action selector="nonUILogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsk-Ei-2gB"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-C2-H5t">

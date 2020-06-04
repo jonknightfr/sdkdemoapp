@@ -166,7 +166,7 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func browserLogin(_ sender: Any) {
+    @IBAction func nonUILogin(_ sender: Any) {
         
         self.loginButton.isHidden = true
         self.loginWebButton.isHidden = true
