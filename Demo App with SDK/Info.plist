@@ -33,6 +33,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>FRExample app uses BLE to collect device information</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>To login and approve transactions</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To get your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>To get your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To get your location</string>
+	<key>NSCameraUsageDescription</key>
+	<string>To scan QR codes</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -73,15 +85,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSFaceIDUsageDescription</key>
-    <string>To login and approve transactions</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>To get your location</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>To get your location</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>To get your location</string>
-    <key>NSBluetoothAlwaysUsageDescription</key>
-    <string>FRExample app uses BLE to collect device information</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Font Awesome 5 Free-Solid-900.otf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>

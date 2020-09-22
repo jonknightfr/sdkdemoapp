@@ -1,6 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-Demo App with SDK/Pods-Demo App with SDK-frameworks.sh
-${BUILT_PRODUCTS_DIR}/FRAuth/FRAuth.framework
-${BUILT_PRODUCTS_DIR}/FRProximity/FRProximity.framework
-${BUILT_PRODUCTS_DIR}/FRUI/FRUI.framework
-${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework
-${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

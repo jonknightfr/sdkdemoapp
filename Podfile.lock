@@ -1,34 +1,59 @@
 PODS:
-  - FRAuth (1.0.0)
-  - FRProximity (1.0.0):
-    - FRAuth (~> 1.0.0)
-  - FRUI (1.0.0):
-    - FRAuth (~> 1.0.0)
+  - EasyNotificationBadge (1.2.0)
+  - FRAuth (2.1.0):
+    - FRCore (~> 2.1.0)
+  - FRAuthenticator (2.1.0):
+    - FRCore (~> 2.1.0)
+  - FRCore (2.1.0)
+  - FRProximity (2.1.0):
+    - FRAuth (~> 2.1.0)
+  - FRUI (2.1.0):
+    - FRAuth (~> 2.1.0)
+  - MarqueeLabel (4.0.2)
+  - NotificationBannerSwift (3.0.2):
+    - MarqueeLabel (~> 4.0.0)
+    - SnapKit (~> 5.0.0)
+  - SnapKit (5.0.1)
   - SwiftKeychainWrapper (3.4.0)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - EasyNotificationBadge
   - FRAuth
+  - FRAuthenticator
   - FRProximity
   - FRUI
+  - NotificationBannerSwift (~> 3.0.0)
   - SwiftKeychainWrapper
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
+    - EasyNotificationBadge
     - FRAuth
+    - FRAuthenticator
+    - FRCore
     - FRProximity
     - FRUI
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
     - SwiftKeychainWrapper
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  FRAuth: b573d86a89b044bbbe0951e13de26c5f21bf4f3f
-  FRProximity: e5f83d3a3943a653cc6de6c6191460ad20e780c3
-  FRUI: 4ff3c92fe654471ca228339a40c034a45ae417d6
+  EasyNotificationBadge: afeb15ed6f9a4262d626a2b745297e96afa26c2e
+  FRAuth: 9096cf6cdbabc840c7266d4919f35065c03abdcc
+  FRAuthenticator: 555365d20d3a5c279caefa191e38c2b4c6037270
+  FRCore: 91d49e8535453928e213c34a77e810c8ccda417d
+  FRProximity: 263a5bd524edf56235f88067aa0969cea30a122a
+  FRUI: 6155b835be30a0e470e13b2e05d59dbcb87d9fc5
+  MarqueeLabel: f762aa681ae201f66c1d511858b171f75d83013a
+  NotificationBannerSwift: 713e20f21b6105f4a36a00e5d9fa414a930d3d8e
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 3c0894835bf78f0dc1e2e58397ed0c76a3e6d873
+PODFILE CHECKSUM: 4225e8199b84e02cab3b3bb0d1c792fb60bb7ab8
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

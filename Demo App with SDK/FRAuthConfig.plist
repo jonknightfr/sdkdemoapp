@@ -5,22 +5,22 @@
 	<key>forgerock_oauth_client_id</key>
 	<string>mobileapp</string>
 	<key>forgerock_oauth_redirect_uri</key>
-	<string>mobileapp://oidc_callback</string>
+	<string>forgerock://oidc_callback</string>
 	<key>forgerock_oauth_scope</key>
-	<string>openid uid</string>
+	<string>openid fr:idm:*</string>
 	<key>forgerock_oauth_url</key>
-	<string>https://wave.frdpcloud.com/openam</string>
+	<string>https://openam-uksa-demo.forgeblocks.com/am</string>
 	<key>forgerock_oauth_threshold</key>
 	<string>60</string>
 	<key>forgerock_url</key>
-	<string>https://wave.frdpcloud.com/openam</string>
+	<string>https://openam-uksa-demo.forgeblocks.com/am</string>
 	<key>forgerock_realm</key>
-	<string>root</string>
+	<string>alpha</string>
 	<key>forgerock_timeout</key>
 	<string>60</string>
 	<key>forgerock_auth_service_name</key>
-	<string>13i-DeviceRiskAssessment</string>
+	<string>Login</string>
 	<key>forgerock_registration_service_name</key>
-	<string>sdkRegistrationTree</string>
+	<string>Registration</string>
 </dict>
 </plist>

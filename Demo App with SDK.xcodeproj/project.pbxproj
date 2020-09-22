@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		816EF211623D5C808C72AB5D /* Pods_Demo_App_with_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E3FF50E8C41E534416468F /* Pods_Demo_App_with_SDK.framework */; };
+		933CDEFD2510FFD8009590E9 /* PushRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CDEFC2510FFD8009590E9 /* PushRegistrationView.swift */; };
+		933CDEFF2511056A009590E9 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 933CDEFE2511052F009590E9 /* Font Awesome 5 Free-Solid-900.otf */; };
 		939F6DEF241E9A5C002434E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939F6DEE241E9A5C002434E0 /* AppDelegate.swift */; };
 		939F6DF1241E9A5C002434E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939F6DF0241E9A5C002434E0 /* SceneDelegate.swift */; };
 		939F6DF3241E9A5C002434E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939F6DF2241E9A5C002434E0 /* ViewController.swift */; };
@@ -15,10 +17,16 @@
 		939F6DF8241E9A5C002434E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939F6DF7241E9A5C002434E0 /* Assets.xcassets */; };
 		939F6DFB241E9A5C002434E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939F6DF9241E9A5C002434E0 /* LaunchScreen.storyboard */; };
 		939F6E03241E9B16002434E0 /* FRAuthConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 939F6E02241E9B16002434E0 /* FRAuthConfig.plist */; };
+		93AFA30225177FC1000D85B2 /* DiagnosticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFA30125177FC1000D85B2 /* DiagnosticView.swift */; };
+		93AFA30E2517CAE0000D85B2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFA30D2517CAE0000D85B2 /* ProfileView.swift */; };
+		93AFA32B2518EB7C000D85B2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AFA32A2518EB7C000D85B2 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4982549FD660DC07A9A78138 /* Pods-Demo App with SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo App with SDK.debug.xcconfig"; path = "Target Support Files/Pods-Demo App with SDK/Pods-Demo App with SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		933CDEF92510E7DD009590E9 /* Demo App with SDK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Demo App with SDK.entitlements"; sourceTree = "<group>"; };
+		933CDEFC2510FFD8009590E9 /* PushRegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushRegistrationView.swift; sourceTree = "<group>"; };
+		933CDEFE2511052F009590E9 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
 		939F6DEB241E9A5C002434E0 /* Demo App with SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App with SDK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		939F6DEE241E9A5C002434E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		939F6DF0241E9A5C002434E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,9 @@
 		939F6DFA241E9A5C002434E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		939F6DFC241E9A5C002434E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		939F6E02241E9B16002434E0 /* FRAuthConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FRAuthConfig.plist; sourceTree = "<group>"; };
+		93AFA30125177FC1000D85B2 /* DiagnosticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticView.swift; sourceTree = "<group>"; };
+		93AFA30D2517CAE0000D85B2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		93AFA32A2518EB7C000D85B2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D8E3FF50E8C41E534416468F /* Pods_Demo_App_with_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_App_with_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9ACB68FCA8FAA03063F7637 /* Pods-Demo App with SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo App with SDK.release.xcconfig"; path = "Target Support Files/Pods-Demo App with SDK/Pods-Demo App with SDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,11 +93,17 @@
 		939F6DED241E9A5C002434E0 /* Demo App with SDK */ = {
 			isa = PBXGroup;
 			children = (
+				933CDEF92510E7DD009590E9 /* Demo App with SDK.entitlements */,
+				93AFA32A2518EB7C000D85B2 /* MainView.swift */,
 				939F6DEE241E9A5C002434E0 /* AppDelegate.swift */,
 				939F6DF0241E9A5C002434E0 /* SceneDelegate.swift */,
 				939F6DF2241E9A5C002434E0 /* ViewController.swift */,
 				939F6DF4241E9A5C002434E0 /* Main.storyboard */,
+				93AFA30D2517CAE0000D85B2 /* ProfileView.swift */,
+				93AFA30125177FC1000D85B2 /* DiagnosticView.swift */,
+				933CDEFC2510FFD8009590E9 /* PushRegistrationView.swift */,
 				939F6E02241E9B16002434E0 /* FRAuthConfig.plist */,
+				933CDEFE2511052F009590E9 /* Font Awesome 5 Free-Solid-900.otf */,
 				939F6DF7241E9A5C002434E0 /* Assets.xcassets */,
 				939F6DF9241E9A5C002434E0 /* LaunchScreen.storyboard */,
 				939F6DFC241E9A5C002434E0 /* Info.plist */,
@@ -158,6 +175,7 @@
 				939F6DFB241E9A5C002434E0 /* LaunchScreen.storyboard in Resources */,
 				939F6DF8241E9A5C002434E0 /* Assets.xcassets in Resources */,
 				939F6DF6241E9A5C002434E0 /* Main.storyboard in Resources */,
+				933CDEFF2511056A009590E9 /* Font Awesome 5 Free-Solid-900.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +229,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				939F6DF3241E9A5C002434E0 /* ViewController.swift in Sources */,
+				93AFA32B2518EB7C000D85B2 /* MainView.swift in Sources */,
 				939F6DEF241E9A5C002434E0 /* AppDelegate.swift in Sources */,
+				93AFA30225177FC1000D85B2 /* DiagnosticView.swift in Sources */,
 				939F6DF1241E9A5C002434E0 /* SceneDelegate.swift in Sources */,
+				93AFA30E2517CAE0000D85B2 /* ProfileView.swift in Sources */,
+				933CDEFD2510FFD8009590E9 /* PushRegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,14 +379,15 @@
 			baseConfigurationReference = 4982549FD660DC07A9A78138 /* Pods-Demo App with SDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Demo App with SDK/Demo App with SDK.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MBZD8XJ9E9;
+				DEVELOPMENT_TEAM = JV6EC9KSN3;
 				INFOPLIST_FILE = "Demo App with SDK/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jonk.Demo-App-with-SDK";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonk.ForgeBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,14 +399,15 @@
 			baseConfigurationReference = F9ACB68FCA8FAA03063F7637 /* Pods-Demo App with SDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Demo App with SDK/Demo App with SDK.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MBZD8XJ9E9;
+				DEVELOPMENT_TEAM = JV6EC9KSN3;
 				INFOPLIST_FILE = "Demo App with SDK/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jonk.Demo-App-with-SDK";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonk.ForgeBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

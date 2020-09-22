@@ -7,80 +7,176 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "148B761B-28DC-4705-BA26-48BD5B473219"
+            uuid = "78C30F87-22A0-4C24-9924-7BFA236A7E96"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Demo App with SDK/SceneDelegate.swift"
+            filePath = "Demo App with SDK/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getNotificationSettings()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78C30F87-22A0-4C24-9924-7BFA236A7E96 - de5ae24664cbaa4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Demo_App_with_SDK.AppDelegate.getNotificationSettings() -&gt; ()"
+                  moduleName = "Demo App with SDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonknight/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/Stash/Demo%20App%20with%20SDK/Demo%20App%20with%20SDK/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "78C30F87-22A0-4C24-9924-7BFA236A7E96 - 5079d3603841e864"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UNNotificationSettings) -&gt; () in Demo_App_with_SDK.AppDelegate.getNotificationSettings() -&gt; ()"
+                  moduleName = "Demo App with SDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonknight/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/Stash/Demo%20App%20with%20SDK/Demo%20App%20with%20SDK/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2BE7B5B6-31E0-4C10-8F4D-9E91C2E9980A"
-            shouldBeEnabled = "No"
+            uuid = "64B4C0AC-5C2F-4F9F-9FC0-2B913AC0BF23"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Demo App with SDK/SceneDelegate.swift"
+            filePath = "Demo App with SDK/PushRegistrationView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "metadataOutput(_:didOutput:from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "64B4C0AC-5C2F-4F9F-9FC0-2B913AC0BF23 - 39352636d7ecfd99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Demo_App_with_SDK.PushRegistrationView.metadataOutput(_: __C.AVCaptureMetadataOutput, didOutput: Swift.Array&lt;__C.AVMetadataObject&gt;, from: __C.AVCaptureConnection) -&gt; ()"
+                  moduleName = "Demo App with SDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonknight/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/Stash/Demo%20App%20with%20SDK/Demo%20App%20with%20SDK/PushRegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "188"
+                  endingLineNumber = "188"
+                  offsetFromSymbolStart = "3820">
+               </Location>
+               <Location
+                  uuid = "64B4C0AC-5C2F-4F9F-9FC0-2B913AC0BF23 - 7bc3cac36102fadc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (FRAuthenticator.Mechanism) -&gt; () in Demo_App_with_SDK.PushRegistrationView.metadataOutput(_: __C.AVCaptureMetadataOutput, didOutput: Swift.Array&lt;__C.AVMetadataObject&gt;, from: __C.AVCaptureConnection) -&gt; ()"
+                  moduleName = "Demo App with SDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonknight/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/Stash/Demo%20App%20with%20SDK/Demo%20App%20with%20SDK/PushRegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CBFB05F9-44AF-49FA-8E58-88ECFE718759"
+            uuid = "2D47CE00-10F2-4C0C-AEC7-8BA822EDA68C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Demo App with SDK/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "301"
-            endingLineNumber = "301"
-            landmarkName = "updateTokens(data:)"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "loginCompleted(token:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "52D0559A-14BC-4068-8696-B6217B882353"
+            uuid = "F0C3304B-2EE5-49F9-8552-7AA4A3F3FC41"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Demo App with SDK/ViewController.swift"
+            filePath = "Demo App with SDK/ProfileView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
-            landmarkName = "handleNode(user:node:error:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6C1E9271-A270-454E-91D3-CB61AC8C5BB6"
+            uuid = "286C2C41-B583-4C1F-81D3-09654F34A706"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Demo App with SDK/ProfileView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9A24235-D6EB-47D3-BE30-FC4866C9130A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Demo App with SDK/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
-            landmarkName = "handleNode(user:node:error:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9CC0C68-1F7C-4381-8CFA-59845D494069"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Demo App with SDK/ProfileView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "updateDisplay()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

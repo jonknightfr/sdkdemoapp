@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreLocation
+import FRAuthenticator
+
+var snsDeviceID:String = ""
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +20,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let locationManager = CLLocationManager()
 
     
+    
+    func getNotificationSettings() {
+        UNUserNotificationCenter.current().getNotificationSettings {
+            settings in
+            print("Notification settings: \(settings)")
+            guard settings.authorizationStatus == .authorized else { return }
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
+        }
+    }
+    
+    
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        FRALog.setLogLevel(.all)
+        
         locationManager.requestWhenInUseAuthorization()
+
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in }
+        application.registerForRemoteNotifications()
+        
+        getNotificationSettings()
+        
         return true
     }
 
@@ -36,6 +65,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
+        snsDeviceID = tokenParts.joined()
+        print("Device SNS: \(snsDeviceID)")
+        print("Device UDID: \(UIDevice.current.identifierForVendor!.uuidString)")
+
+        
+        FRAPushHandler.shared.application(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        // Upon receiving an error from APNs, notify Authenticator module to properly update the status
+        FRAPushHandler.shared.application(application, didFailToRegisterForRemoteNotificationsWithError: error)
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        print("INCOMING NOTIFICATION")
+        
+        // Once received remote notification, handle it with FRAPushHandler to get PushNotification object
+        // If RemoteNotification does not contain expected payload structured returned from AM, Authenticator module does not return PushNotification object
+        if let notification = FRAPushHandler.shared.application(application, didReceiveRemoteNotification: userInfo) {
+            // With PushNotification object, you can either accept or deny
+            notification.accept(onSuccess: {
+                print("Accepted Push")
+            }) { (error) in
+                print("Denied Push")
+            }
+        }
+    }
+    
 }
 
 
@@ -73,3 +134,45 @@ func decodeJWTPart(_ value: String) -> [String: Any]? {
     return payload
 }
 
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        let userInfo = response.notification.request.content.userInfo
+        
+        print("INCOMING MESSAGE")
+        completionHandler()
+        
+        /*
+        if let aps = userInfo["aps"] as? [String: AnyObject] {
+            
+            let data = aps["data"] as! String
+            let messageId = aps["messageId"] as! String
+            
+            if (response.actionIdentifier == "ACCEPT_ACTION") {
+                FRPushUtils().responseToAuthNotification(deny: false, dataJWT: data, messageId: messageId, completionHandler: {
+                    completionHandler()
+                })
+            } else if (response.actionIdentifier == "DECLINE_ACTION") {
+                FRPushUtils().responseToAuthNotification(deny: true, dataJWT: data, messageId: messageId, completionHandler: {
+                    completionHandler()
+                })
+            } else {
+                DispatchQueue.main.async(execute: {
+                    let alert = TransactionAlert(title: "Alert", completionHandler:{
+                        completionHandler()
+                    })
+                    alert.HandleNotification(aps: aps)
+                    alert.show(animated: true)
+                });
+            }
+            
+        } else {
+            completionHandler()
+        }
+        */
+    }
+}
